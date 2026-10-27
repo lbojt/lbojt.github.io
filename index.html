@@ -9,6 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .project-bullets {
+      margin: 1rem 0 1.25rem;
+      padding-left: 1.15rem;
+      color: var(--muted, #5f6d67);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .project-bullets li { padding-left: 0.2rem; margin: 0.35rem 0; }
+    .project-bullets li::marker { color: var(--accent, #4f8b78); }
+  </style>
+
 </head>
 <body>
   <div class="topline"></div>
@@ -57,7 +70,13 @@
       <div class="project-grid">
         <article class="project-card project-featured">
           <div class="project-visual visual-econometrics"><div class="visual-top"><span>RESEARCH / ECONOMETRICS</span><span>01</span></div><div class="scatter-wrap"><svg viewBox="0 0 440 190" role="img" aria-label="Illustrative scatter plot"><path d="M28 10V160H420" stroke="#71847e" stroke-width="1" fill="none"/><path d="M28 45H420 M28 85H420 M28 125H420" stroke="#71847e" stroke-opacity=".25" stroke-dasharray="3 5"/><path d="M45 143L390 28" stroke="#b9e1d4" stroke-width="2" stroke-dasharray="5 5"/><g fill="#e6c77b"><circle cx="57" cy="132" r="4"/><circle cx="76" cy="148" r="4"/><circle cx="91" cy="116" r="4"/><circle cx="119" cy="121" r="4"/><circle cx="136" cy="94" r="4"/><circle cx="154" cy="120" r="4"/><circle cx="177" cy="82" r="4"/><circle cx="195" cy="100" r="4"/><circle cx="213" cy="71" r="4"/><circle cx="239" cy="88" r="4"/><circle cx="253" cy="56" r="4"/><circle cx="284" cy="67" r="4"/><circle cx="301" cy="42" r="4"/><circle cx="327" cy="56" r="4"/><circle cx="349" cy="31" r="4"/><circle cx="374" cy="40" r="4"/></g></svg><div class="visual-caption">MODEL THE QUESTION.<br>TEST THE ASSUMPTIONS.</div></div></div>
-          <div class="project-info"><div class="project-tags"><span>ECONOMICS</span><span>STATISTICAL ANALYSIS</span></div><h3>Econometrics & Research</h3><p>Exploring a research question through data, statistical methods, and careful interpretation of results.</p><div class="project-foot"><span>Academic case study</span><a href="#contact" aria-label="Ask about econometrics project">Details soon ↗</a></div></div>
+          <div class="project-info"><div class="project-tags"><span>ECONOMICS</span><span>STATISTICAL ANALYSIS</span></div><h3>Econometrics & Research</h3><p>Examining whether quarterback salary allocation is associated with NFL team success.</p>
+            <ul class="project-bullets">
+              <li>Analyzed quarterback salary allocation as a percentage of team payroll in relation to team winning percentage.</li>
+              <li>Built and visualized an Ordinary Least Squares (OLS) framework in R with controls for lagged winning percentage, strength of schedule, and fixed effects.</li>
+              <li>Compiled a team-season panel dataset covering the 2013–2025 seasons.</li>
+            </ul>
+            <div class="project-foot"><span>R · OLS · Panel data</span><a href="#contact" aria-label="Ask about econometrics project">Discuss project ↗</a></div></div>
         </article>
         <article class="project-card">
           <div class="project-visual visual-python"><div class="visual-top"><span>PYTHON / ANALYTICS</span><span>02</span></div><div class="code-window"><div class="code-dots"><i></i><i></i><i></i><span>analysis.py</span></div><pre><span class="code-muted"># Explore the data</span>
@@ -68,7 +87,13 @@ summary = df.<span class="code-yellow">describe</span>()
 missing = df.<span class="code-yellow">isna</span>().<span class="code-yellow">sum</span>()
 
 <span class="code-purple">print</span>(summary)</pre></div></div>
-          <div class="project-info"><div class="project-tags"><span>PYTHON</span><span>DATA PREPARATION</span></div><h3>Python Data Analysis</h3><p>A reproducible analysis that moves from raw data to useful patterns, visualizations, and conclusions.</p><div class="project-foot"><span>Project placeholder</span><a href="#contact">Details soon ↗</a></div></div>
+          <div class="project-info"><div class="project-tags"><span>PYTHON</span><span>DATA PREPARATION</span></div><h3>Python Data Analysis</h3><p>Investigating which team statistics best indicate whether an MLB team will qualify for the playoffs.</p>
+            <ul class="project-bullets">
+              <li>Constructed a correlation heatmap to compare team statistics as potential playoff predictors.</li>
+              <li>Examined the relationships between playoff qualification and performance measures, including runs scored and wins.</li>
+              <li>Found that runs scored was a stronger playoff predictor than wins in this analysis.</li>
+            </ul>
+            <div class="project-foot"><span>Python · Correlation analysis</span><a href="#contact">Discuss project ↗</a></div></div>
         </article>
         <article class="project-card">
           <div class="project-visual visual-workflow"><div class="visual-top"><span>OPERATIONS / PROCESS</span><span>03</span></div><div class="workflow">
@@ -76,7 +101,13 @@ missing = df.<span class="code-yellow">isna</span>().<span class="code-yellow">s
             <div class="workflow-step active"><span>02</span><strong>Standardize</strong><small>Reduce friction and repetition</small></div><div class="workflow-arrow">↓</div>
             <div class="workflow-step"><span>03</span><strong>Improve</strong><small>Make the work easier to repeat</small></div>
           </div></div>
-          <div class="project-info"><div class="project-tags"><span>WORKFLOW DESIGN</span><span>EFFICIENCY</span></div><h3>Workflow Improvement</h3><p>How a clunky document-processing workflow was standardized to make recurring work more efficient.</p><div class="project-foot"><span>Professional experience</span><a href="#experience">View experience ↗</a></div></div>
+          <div class="project-info"><div class="project-tags"><span>WORKFLOW DESIGN</span><span>EFFICIENCY</span></div><h3>Workflow Improvement</h3><p>Collaborated with management to streamline and optimize a recurring document-editing workflow.</p>
+            <ul class="project-bullets">
+              <li>Worked with management to improve and standardize the existing document-editing process.</li>
+              <li>Increased document turnaround speed by 38%.</li>
+              <li>Improved overall accuracy by 10%.</li>
+            </ul>
+            <div class="project-foot"><span>Process optimization · Quality improvement</span><a href="#experience">View experience ↗</a></div></div>
         </article>
       </div>
       <p class="section-note">Project summaries are starting points. Add verified methods, findings, charts, and project links before publishing.</p>
@@ -97,7 +128,7 @@ missing = df.<span class="code-yellow">isna</span>().<span class="code-yellow">s
 
     <section class="skills-section"><div class="section-wrap skills-inner"><div><div class="eyebrow">04 / TOOLKIT</div><h2>Tools are useful.<br><em>Thinking matters more.</em></h2></div><div class="skills-grid"><div class="skill-group"><span class="skill-index">01</span><h3>Analysis</h3><p>Econometrics<br>Statistical reasoning<br>Research design</p></div><div class="skill-group"><span class="skill-index">02</span><h3>Data</h3><p>Excel & Google Sheets<br>CRM management<br>Data cleaning</p></div><div class="skill-group"><span class="skill-index">03</span><h3>Technology</h3><p>Python coursework<br>SQL fundamentals<br>Data visualization</p></div><div class="skill-group"><span class="skill-index">04</span><h3>Business</h3><p>Workflow improvement<br>Lead research<br>Process documentation</p></div></div></div></section>
 
-    <section class="contact-section" id="contact"><div class="section-wrap contact-inner"><div class="eyebrow"><span class="status-dot"></span> OPEN TO FULL-TIME OPPORTUNITIES</div><h2>Let's make the<br><em>numbers mean something.</em></h2><p>Interested in data analytics, business intelligence, business analysis, or operations? I'd be glad to connect.</p><div class="contact-actions"><a class="button button-light" href="mailto:lukasbojt@gmail.com">Email me <span>↗</span></a><a class="contact-link" href="https://www.linkedin.com/in/lukas-bojt-40501a29b/" target="_blank" rel="noreferrer">LinkedIn profile ↗</a></div><div class="contact-foot"><span>LUKAS BOJT</span><span>BUILT AROUND CURIOSITY & EVIDENCE</span><a href="#home">BACK TO TOP ↑</a></div></div></section>
+    <section class="contact-section" id="contact"><div class="section-wrap contact-inner"><div class="eyebrow"><span class="status-dot"></span> OPEN TO FULL-TIME OPPORTUNITIES</div><h2>Let's make the<br><em>numbers mean something.</em></h2><p>Interested in data analytics, business intelligence, business analysis, or operations? I'd be glad to connect.</p><div class="contact-actions"><a class="button button-light" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a><a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn profile ↗</a></div><div class="contact-foot"><span>LUKAS BOJT</span><span>BUILT AROUND CURIOSITY & EVIDENCE</span><a href="#home">BACK TO TOP ↑</a></div></div></section>
   </main>
   <script src="script.js"></script>
 </body>
